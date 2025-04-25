@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Transitions & Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS3 Transitions & Animations Playground</h1>
+    </header>
+    <main>
+        <!-- Animation Section -->
+        <section id="animation-section">
+            <h2>Interactive Animations</h2>
+            <button id="animate-btn">Trigger Animation</button>
+            <div id="animated-box" class="box"></div>
+            <img id="animated-image" src="https://via.placeholder.com/200?text=Image" alt="Animated Image">
+        </section>
+
+        <!-- User Preferences Section -->
+        <section id="preferences-section">
+            <h2>User Preferences</h2>
+            <form id="preferences-form">
+                <div>
+                    <label for="bg-color">Background Color:</label>
+                    <input type="color" id="bg-color" value="#ffffff">
+                </div>
+                <div>
+                    <label for="font-size">Font Size (px):</label>
+                    <input type="number" id="font-size" min="12" max="24" value="16">
+                </div>
+                <button type="submit">Save Preferences</button>
+            </form>
+            <button id="reset-btn">Reset Preferences</button>
+            <p id="status-message">Preferences will be saved to localStorage.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Bravon Okoth for PLP Web Technologies</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

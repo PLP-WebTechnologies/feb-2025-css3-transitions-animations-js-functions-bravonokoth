@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: background-color 0.5s, font-size 0.3s;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+/* Animated Box */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    margin: 20px auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box.animate {
+    transform: rotate(360deg) scale(1.5);
+}
+
+/* Animated Image */
+#animated-image {
+    display: block;
+    margin: 20px auto;
+    animation: none;
+}
+
+#animated-image.animate {
+    animation: pulse 1s infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Form Styling */
+form div {
+    margin: 10px 0;
+}
+
+input[type="color"], input[type="number"] {
+    padding: 5px;
+}
+
+#status-message {
+    color: green;
+    margin-top: 10px;
+}
